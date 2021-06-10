@@ -1,0 +1,8 @@
+// github.com/piotrchaber
+
+    void preOrder(Node *root) {
+        if(root == nullptr) return;
+        std::cout << root->data << " ";
+        preOrder(root->left);
+        preOrder(root->right);
+    }

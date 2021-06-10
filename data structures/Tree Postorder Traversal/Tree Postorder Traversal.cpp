@@ -1,0 +1,8 @@
+// github.com/piotrchaber
+
+    void postOrder(Node *root) {
+        if(root == nullptr) return;
+        postOrder(root->left);
+        postOrder(root->right);
+        std::cout << root->data << " ";
+    }
